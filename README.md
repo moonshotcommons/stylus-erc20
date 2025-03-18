@@ -1,4 +1,4 @@
-# Stylus ERC20 合约开发指南
+# 使用 Stylus 发布 ERC20 合约
 
 ## 设置开发环境变量
 ```bash
@@ -9,7 +9,7 @@ export ARB_RPC=https://sepolia-rollup.arbitrum.io/rpc # Arbitrum Sepolia RPC
 
 ### 1. 获取代码
 ```bash
-git clone https://github.com/hackquest-io/hackquest-contracts.git
+git clone git@github.com:moonshotcommons/stylus-erc20.git
 ```
 
 ### 2. 编译（无需 Docker 环境）
