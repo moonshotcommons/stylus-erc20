@@ -22,17 +22,12 @@ cargo stylus check -e https://sepolia-rollup.arbitrum.io/rpc
 cargo stylus deploy --endpoint=$ARB_RPC --private-key=$PRIVATE_KEY --estimate-gas
 ```
 
-### 4. 验证合约 
-```bash
-cargo stylus verify --deployment-tx=0xba2baaafbe2746816a4fbb052e7cdbf7bfafa31693b78cae5734a831d58f2c33 --endpoint=$ARB_RPC
-```
-
-### 5. 导出 ABI
+### 4. 导出 ABI
 ```bash
 cargo stylus export-abi
 ```
 
-### 6. 合约交互
+### 5. 合约交互
 #### 使用以下命令铸造代币：
 ```bash
 cast send --rpc-url $ARB_RPC --private-key $PRIVATE_KEY 0xcd7b9304c6ce5531d92b3ea481f62851c533825d "mint(uint256)" 6000000000000000000
